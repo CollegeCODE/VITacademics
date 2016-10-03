@@ -137,7 +137,7 @@ exports.get = function (app, data, callback) {
                   break;
 
                 case 'P':
-                  return true;
+                  return null;
                   break;
 
                 default:
@@ -178,6 +178,10 @@ exports.get = function (app, data, callback) {
                 case 7:
                   return 'N';
                   break;
+                  
+                case 8:
+                  return 'P';
+                  break;                  
 
                 default:
                   return null;
